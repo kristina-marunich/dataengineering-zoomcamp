@@ -1,0 +1,2 @@
+{"operation": "create", "resource": {"type": "pipeline", "uuid": "magnificent_amulet"}, "timestamp": 1707054141, "user": null}
+{"operation": "create", "resource": {"type": "pipeline", "uuid": "load_to_gcp_copy"}, "timestamp": 1707055606, "user": null}
