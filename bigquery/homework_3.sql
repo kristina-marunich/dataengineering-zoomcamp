@@ -37,5 +37,5 @@ where date(TIMESTAMP_MICROS(CAST(lpep_pickup_datetime / 1000 AS INT64))) >= '202
 and date(TIMESTAMP_MICROS(CAST(lpep_pickup_datetime / 1000 AS INT64))) <= '2022-06-30';
 
 select distinct PULocationID from dataeng-376620.nytaxi.green_taxi_2022_partitoned_clustered
-where date(TIMESTAMP_MICROS(CAST(lpep_pickup_datetime / 1000 AS INT64))) >= '2022-06-01'
-and date(TIMESTAMP_MICROS(CAST(lpep_pickup_datetime / 1000 AS INT64))) <= '2022-06-30';
+where cleaned_pickup_datetime >= '2022-06-01'
+and cleaned_pickup_datetime <= '2022-06-30';
